@@ -108,6 +108,7 @@
             this.lb_Gia.Size = new System.Drawing.Size(28, 16);
             this.lb_Gia.TabIndex = 7;
             this.lb_Gia.Text = "Giá";
+            this.lb_Gia.Click += new System.EventHandler(this.lb_Gia_Click);
             // 
             // lb_TongTien
             // 

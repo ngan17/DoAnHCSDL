@@ -15,7 +15,7 @@ namespace DOAN
     public partial class tbl_User
     {
         public string TaiKhoan { get; set; }
-        public string MaNhanVien { get; set; }
+        public int MaNhanVien { get; set; }
         public string PasswordHash { get; set; }
         public string PasswordSalt { get; set; }
         public Nullable<int> Quyen { get; set; }

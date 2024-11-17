@@ -21,7 +21,7 @@ namespace DOAN
             this.tbl_User = new HashSet<tbl_User>();
         }
     
-        public string MaNhanVien { get; set; }
+        public int MaNhanVien { get; set; }
         public string HoTen { get; set; }
         public string GioiTinh { get; set; }
         public string Email { get; set; }

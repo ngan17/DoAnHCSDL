@@ -20,7 +20,7 @@ namespace DOAN.UserCotrols
         int masp;
    
         DataTable dt;
-        QuanLyCuaHangQuanAoEntities ql = new QuanLyCuaHangQuanAoEntities();
+        QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
         List<SanPham> sanPhamList=new List<SanPham>(); 
         private List<SanPham> deletedSanPhamList = new List<SanPham>();
         List<SanPham>add_sp=new List<SanPham>();
@@ -173,7 +173,8 @@ namespace DOAN.UserCotrols
             add_sp = new List<SanPham>();
             foreach (SanPham deletedItem in deletedSanPhamList)
             {
-                ql.SanPhams.Remove(deletedItem);
+                var i = ql.SanPhams.FirstOrDefault(t => t.MaSanPham ==deletedItem.MaSanPham );
+                ql.SanPhams.Remove(i);
             }
             deletedSanPhamList = new List<SanPham>();
             ql.SaveChanges();
@@ -209,7 +210,7 @@ namespace DOAN.UserCotrols
 
         private void loaddata()
         {
-            using (QuanLyCuaHangQuanAoEntities ql = new QuanLyCuaHangQuanAoEntities())
+            using (QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2       ())
             {
                 try
                 {

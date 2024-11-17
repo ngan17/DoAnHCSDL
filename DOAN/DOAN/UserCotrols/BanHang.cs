@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Reporting.WinForms;
+
 using System.Data.Entity;
 
 namespace DOAN.UserCotrols
@@ -14,6 +16,8 @@ namespace DOAN.UserCotrols
     public partial class BanHang : UserControl
     {
         public float TongTienHang=0;
+        public string TaiKhoan;
+    
         public BanHang()
         {
             InitializeComponent();
@@ -26,46 +30,45 @@ namespace DOAN.UserCotrols
 
         private void BanHang_Load(object sender, EventArgs e)
         {
-            using (QuanLyCuaHangQuanAoEntities ql = new QuanLyCuaHangQuanAoEntities())
+            using (     QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2())
             {
                 try
                 {
-                    // Retrieve the list of product categories with their IDs and names
                     var loaiSanPham = ql.LoaiSanPhams.Select(l => new { l.MaLoai, l.TenLoai }).Distinct().ToList();
                     var sizeSanPham = ql.SanPhams.Select(s => s.Size).Distinct().ToList();
                     var mauSacSanPham = ql.SanPhams.Select(s => s.MauSac).Distinct().ToList();
 
-                    // Setup cbo_Loai ComboBox
+                   
                     cbo_Loai.Items.Clear();
-                    cbo_Loai.Items.Insert(0, new { MaLoai = 0, TenLoai = "" }); // Empty item at the top for "All" option
+                    cbo_Loai.Items.Insert(0, new { MaLoai = 0, TenLoai = "" }); 
                     foreach (var item in loaiSanPham)
                     {
-                        cbo_Loai.Items.Add(item); // Add each category with both MaLoai and TenLoai
+                        cbo_Loai.Items.Add(item); 
                     }
                     cbo_Loai.DisplayMember = "TenLoai"; 
                     cbo_Loai.ValueMember = "MaLoai";
 
                     cbo_Loai.SelectedIndex = 1;
 
-                    // Setup cbo_Mau ComboBox for color
+                 
                     cbo_Mau.Items.Clear();
-                    cbo_Mau.Items.Insert(0, ""); // Add empty item at the start
+                    cbo_Mau.Items.Insert(0, ""); 
                     foreach (var color in mauSacSanPham)
                     {
                         cbo_Mau.Items.Add(color);
                     }
                     cbo_Mau.SelectedIndex = 0;
 
-                    // Setup cbo_Size ComboBox for size
+                   
                     cbo_Size.Items.Clear();
-                    cbo_Size.Items.Insert(0, ""); // Add empty item at the start
+                    cbo_Size.Items.Insert(0, ""); 
                     foreach (var size in sizeSanPham)
                     {
                         cbo_Size.Items.Add(size);
                     }
                     cbo_Size.SelectedIndex = 0;
 
-                    // Load product data into FlowLayoutPanel
+             
                     var sanPhamList = ql.SanPhams.ToList();
                     flowLayoutPanel1.Controls.Clear();
                     foreach (var sp in sanPhamList)
@@ -175,18 +178,18 @@ namespace DOAN.UserCotrols
         private void btn_search_Click_1(object sender, EventArgs e)
         {
             int maLoai = (int)cbo_Loai.SelectedValue;
-            QuanLyCuaHangQuanAoEntities ql = new QuanLyCuaHangQuanAoEntities();
+            QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
             List<SanPham> list = ql.SanPhams.Include(t => t.LoaiSanPham).Where(t => t.LoaiSanPham.TenLoai == cbo_Loai.ValueMember).ToList();
 
 
-            // Duyệt qua từng sản phẩm và tạo UserControl
-            flowLayoutPanel1.Controls.Clear(); // Xóa các điều khiển hiện có
+       
+            flowLayoutPanel1.Controls.Clear(); 
             foreach (var sp in list)
             {
                 Item item = new Item();
                 item.SetSP(sp.TenSanPham, sp.HinhAnh, sp.Gia.ToString(), sp.Size.ToString(), sp.MauSac.ToString());
-                item.OnAddItemHD += ItemControl_OnAddItemHD; // Đăng ký sự kiện
-                flowLayoutPanel1.Controls.Add(item); // Thêm điều khiển vào FlowLayoutPanel
+                item.OnAddItemHD += ItemControl_OnAddItemHD; 
+                flowLayoutPanel1.Controls.Add(item); 
             }
         }
 
@@ -207,7 +210,37 @@ namespace DOAN.UserCotrols
 
         private void btn_ThanhToan_Click(object sender, EventArgs e)
         {
-
+            QuanLyCuaHangQuanAoEntities2 ql=new QuanLyCuaHangQuanAoEntities2();
+            HoaDon hd=new HoaDon();
+            hd.TrangThaiThanhToan = "Đã thanh toán";
+            hd.MaNhanVien=ql.tbl_User.Where(t=>t.TaiKhoan==this.TaiKhoan).Select(t=>t.MaNhanVien).FirstOrDefault();
+            hd.MaKhachHang = 1;
+            hd.TongTien=decimal.Parse(txt_TongTien.Text);
+            hd.NgayMuaHang=DateTime.Now;
+            ql.HoaDons.Add(hd);
+            ql.SaveChanges();
+            ChiTietHoaDon ct=new ChiTietHoaDon();
+            ct.MaHoaDon = hd.MaHoaDon;
+            foreach (var con in flowLayoutPanel3.Controls)
+            {
+                itemHD1 i = con as itemHD1;
+                ct.MaSanPham=ql.SanPhams.Where(t=>t.TenSanPham==i.NameCTHD).Select(t=>t.MaSanPham).FirstOrDefault();
+                ct.DonGia = i.gia;
+                ct.SoLuong=i.soluong;
+                ct.ChietKhau = 0;
+                ct.GiaSauChietKhau=(decimal)(i.ThanhTien);
+                ql.ChiTietHoaDons.Add(ct);
+                ql.SaveChanges() ;  
+            }
+            InHoaDon inHoaDon = new InHoaDon();
+            inHoaDon.Show();
+            inHoaDon.tennv=ql.NhanViens.Where(t=>t.MaNhanVien==hd.MaNhanVien).Select(t=>t.HoTen).First();
+            inHoaDon.tenkhach = "Khách vãng lai";
+            inHoaDon.tongtien = decimal.Parse(txt_TongTien.Text);
+            inHoaDon.tienkhach = decimal.Parse(txt_TienKhach.Text);
+            inHoaDon.tienthua=decimal.Parse(txtTienThoi.Text);  
+            inHoaDon.ngaylap=DateTime.Now;
+            inHoaDon.ShowInvoiceReport(hd.MaHoaDon);
         }
 
         private void txt_TienKhach_TextAlignChanged(object sender, EventArgs e)
@@ -223,5 +256,7 @@ namespace DOAN.UserCotrols
             else
                 txtTienThoi.Text = tienthoi.ToString();
         }
+        
+        
     }
 }

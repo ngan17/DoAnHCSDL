@@ -15,7 +15,7 @@ namespace DOAN.UserCotrols
     {
 
         List<tbl_User> list = new List<tbl_User>();
-        QuanLyCuaHangQuanAoEntities ql = new QuanLyCuaHangQuanAoEntities();
+        QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
         string ma;
         List<tbl_User> delete_tk = new List<tbl_User>();
         List<tbl_User> add_nv = new List<tbl_User>();
@@ -75,7 +75,7 @@ namespace DOAN.UserCotrols
         }
         private void load_data()
         {
-            QuanLyCuaHangQuanAoEntities ql = new QuanLyCuaHangQuanAoEntities();
+            QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
             var TK = ql.tbl_User.ToList();
             dataGridView1.DataSource = TK;
             
@@ -89,7 +89,7 @@ namespace DOAN.UserCotrols
             x.PasswordSalt=txt_MatKhau.Text;
             x.Status=cbo_tt.SelectedItem.ToString();
             x.Quyen=int.Parse(cbo_role.SelectedItem.ToString());
-            x.MaNhanVien=txtMa.Text;
+            x.MaNhanVien=int.Parse(txtMa.Text);
             list.Add(x);
             add_nv.Add(x);
             dataGridView1.DataSource=null;
@@ -110,7 +110,7 @@ namespace DOAN.UserCotrols
             x.PasswordSalt = txt_MatKhau.Text;
             x.Status = cbo_tt.SelectedItem.ToString();
             x.Quyen = int.Parse(cbo_role.SelectedItem.ToString());
-            x.MaNhanVien = txtMa.Text;
+            x.MaNhanVien = int.Parse(txtMa.Text);
             dataGridView1.DataSource=null;
             dataGridView1.DataSource=list;
         }
@@ -126,6 +126,37 @@ namespace DOAN.UserCotrols
             }    
             dataGridView1.DataSource = null;    
             dataGridView1.DataSource=list;  
+        }
+
+        private void uiButton5_Click(object sender, EventArgs e)
+        {
+            foreach (tbl_User nhanVien in list)
+            {
+                tbl_User c = ql.tbl_User.FirstOrDefault(t => t.TaiKhoan == nhanVien.TaiKhoan);
+                if (c != null)
+                {
+
+
+                    ql.Entry(c).CurrentValues.SetValues(nhanVien);
+
+
+
+                }
+
+            }
+            foreach (tbl_User x in add_nv)
+            {
+                ql.tbl_User.Add(x);
+            }
+            add_nv = new List<tbl_User>();
+            foreach (tbl_User x in delete_tk)
+            {
+                var deletedItem = ql.tbl_User.FirstOrDefault(t => t.TaiKhoan == x.TaiKhoan);
+                ql.tbl_User.Remove(deletedItem);
+            }
+            delete_tk = new List<tbl_User>();
+            ql.SaveChanges();
+            load_data();
         }
     }
 }

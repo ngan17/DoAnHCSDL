@@ -15,8 +15,8 @@ namespace DOAN.UserCotrols
     {
        
         List <NhanVien> list= new List <NhanVien> ();
-        QuanLyCuaHangQuanAoEntities ql=new QuanLyCuaHangQuanAoEntities ();
-        string ma;
+        QuanLyCuaHangQuanAoEntities2 ql=new QuanLyCuaHangQuanAoEntities2 ();
+        int ma;
         List<NhanVien> deleteNV=new List<NhanVien> ();
         List<NhanVien> add_nv=new List<NhanVien> ();
         public QLNhanVien()
@@ -46,27 +46,11 @@ namespace DOAN.UserCotrols
             cbo_GT.SelectedIndex=0;
         }
 
-        private string create_manv()
-        {
-           
-
-            string mamoi = list
-                            .OrderByDescending(t => t.MaNhanVien)
-                            .Select(t => t.MaNhanVien)
-                            .FirstOrDefault();
-            if (mamoi == null)
-            {
-                return "NV000";
-            }
-            int x = int.Parse(mamoi.Substring(2));
-            x++;
-            return $"NV{x:000}";
-
-        }
+        
 
         private void load_cbo_trangthai()
         {
-            QuanLyCuaHangQuanAoEntities ql = new QuanLyCuaHangQuanAoEntities();
+            QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
             string[] s = new string[] { "Đang làm việc", "Đã nghỉ" };
             cbo_TrangThai.Items.AddRange(s);
             cbo_TrangThai.SelectedIndex=0;
@@ -86,7 +70,7 @@ namespace DOAN.UserCotrols
             {
                 int index = e.RowIndex;
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-                ma = row.Cells[0].Value.ToString();
+                ma = int.Parse(row.Cells[0].Value.ToString());
                 txt_Ten.Text = (row.Cells[1].Value.ToString());
                 cbo_GT.SelectedItem = row.Cells[2].Value.ToString();
                 txt_Email.Text = (row.Cells[3].Value.ToString());
@@ -104,7 +88,7 @@ namespace DOAN.UserCotrols
         {
             NhanVien x1=new NhanVien();
             x1.HoTen = txt_Ten.Text;
-            x1.MaNhanVien = create_manv();
+        
             x1.GioiTinh = cbo_GT.SelectedItem.ToString();
             x1.Email = txt_Email.Text;
             x1.DiaChi = txt_diachi.Text;
@@ -128,7 +112,7 @@ namespace DOAN.UserCotrols
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
 
-                string ma = (row.Cells["MaNhanVien"].Value.ToString());
+                int ma = int.Parse(row.Cells["MaNhanVien"].Value.ToString());
 
 
                 NhanVien i = list.FirstOrDefault(t => t.MaNhanVien == ma);
@@ -193,7 +177,7 @@ namespace DOAN.UserCotrols
 
         private void load_data()
         {
-            QuanLyCuaHangQuanAoEntities ql = new QuanLyCuaHangQuanAoEntities();
+            QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
             dataGridView1.DataSource = ql.NhanViens.ToList();
             
 

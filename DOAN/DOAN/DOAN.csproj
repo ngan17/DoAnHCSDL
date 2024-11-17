@@ -47,25 +47,19 @@
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <HintPath>..\packages\Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <HintPath>..\packages\Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.3.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <HintPath>..\packages\Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\Microsoft.SqlServer.Types.dll</HintPath>
@@ -104,10 +98,10 @@
       <DependentUpon>Add_SP.cs</DependentUpon>
     </Compile>
     <Compile Include="ChiTietHoaDon.cs">
-      <DependentUpon>modelCSDL.tt</DependentUpon>
+      <DependentUpon>QuanLyCuaHangQuanAo.tt</DependentUpon>
     </Compile>
     <Compile Include="ChiTietPhieuNhap.cs">
-      <DependentUpon>modelCSDL.tt</DependentUpon>
+      <DependentUpon>QuanLyCuaHangQuanAo.tt</DependentUpon>
     </Compile>
     <Compile Include="ConnectCSDL.cs" />
     <Compile Include="DANGKY.cs">
@@ -129,7 +123,13 @@
       <DependentUpon>FORMCHINH.cs</DependentUpon>
     </Compile>
     <Compile Include="HoaDon.cs">
-      <DependentUpon>modelCSDL.tt</DependentUpon>
+      <DependentUpon>QuanLyCuaHangQuanAo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InHD1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InHD1.Designer.cs">
+      <DependentUpon>InHD1.cs</DependentUpon>
     </Compile>
     <Compile Include="InHoaDon.cs">
       <SubType>Form</SubType>
@@ -139,50 +139,53 @@
     </Compile>
     <Compile Include="Item\Produce.cs" />
     <Compile Include="KhachHang.cs">
-      <DependentUpon>modelCSDL.tt</DependentUpon>
+      <DependentUpon>QuanLyCuaHangQuanAo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LichLamNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LichLamNhanVien.Designer.cs">
+      <DependentUpon>LichLamNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="LoaiSanPham.cs">
-      <DependentUpon>modelCSDL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="modelCSDL.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>modelCSDL.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="modelCSDL.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>modelCSDL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="modelCSDL.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>modelCSDL.edmx</DependentUpon>
+      <DependentUpon>QuanLyCuaHangQuanAo.tt</DependentUpon>
     </Compile>
     <Compile Include="NhaCungCap.cs">
-      <DependentUpon>modelCSDL.tt</DependentUpon>
+      <DependentUpon>QuanLyCuaHangQuanAo.tt</DependentUpon>
     </Compile>
     <Compile Include="NhanVien.cs">
-      <DependentUpon>modelCSDL.tt</DependentUpon>
+      <DependentUpon>QuanLyCuaHangQuanAo.tt</DependentUpon>
     </Compile>
     <Compile Include="PhieuNhapHang.cs">
-      <DependentUpon>modelCSDL.tt</DependentUpon>
+      <DependentUpon>QuanLyCuaHangQuanAo.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyCuaHangQuanAo.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangQuanAo.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyCuaHangQuanAo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangQuanAo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyCuaHangQuanAo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangQuanAo.edmx</DependentUpon>
+    </Compile>
     <Compile Include="QuanLyCuaHangQuanAoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyCuaHangQuanAoDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="SanPham.cs">
-      <DependentUpon>modelCSDL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>modelCSDL.tt</DependentUpon>
+      <DependentUpon>QuanLyCuaHangQuanAo.tt</DependentUpon>
     </Compile>
     <Compile Include="tbl_User.cs">
-      <DependentUpon>modelCSDL.tt</DependentUpon>
+      <DependentUpon>QuanLyCuaHangQuanAo.tt</DependentUpon>
     </Compile>
     <Compile Include="UserCotrols\add_SanPham.cs">
       <SubType>UserControl</SubType>
@@ -238,12 +241,25 @@
     <Compile Include="UserCotrols\TaiKhoan.Designer.cs">
       <DependentUpon>TaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserCotrols\TKB_TUAN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCotrols\TKB_TUAN.Designer.cs">
+      <DependentUpon>TKB_TUAN.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserCotrols\TrangChu.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserCotrols\TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
+    <Compile Include="v_ChiTietHoaDon_SanPham.cs">
+      <DependentUpon>QuanLyCuaHangQuanAo.tt</DependentUpon>
+    </Compile>
+    <None Include="Resources\icons8-teamwork-100.png" />
+    <None Include="Resources\icons8-teamwork-64.png" />
+    <None Include="Resources\icons8-teamwork-16.png" />
+    <None Include="Resources\teamwork1.png" />
     <EmbeddedResource Include="Add_SP.resx">
       <DependentUpon>Add_SP.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,8 +272,14 @@
     <EmbeddedResource Include="FORMCHINH.resx">
       <DependentUpon>FORMCHINH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InHD1.resx">
+      <DependentUpon>InHD1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InHoaDon.resx">
       <DependentUpon>InHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichLamNhanVien.resx">
+      <DependentUpon>LichLamNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -269,7 +291,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report1.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="Report2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report3.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Report4.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report5.rdlc" />
     <EmbeddedResource Include="UserCotrols\add_SanPham.resx">
       <DependentUpon>add_SanPham.cs</DependentUpon>
     </EmbeddedResource>
@@ -297,16 +331,12 @@
     <EmbeddedResource Include="UserCotrols\TaiKhoan.resx">
       <DependentUpon>TaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserCotrols\TKB_TUAN.resx">
+      <DependentUpon>TKB_TUAN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserCotrols\TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="modelCSDL.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>modelCSDL.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="modelCSDL.edmx.diagram">
-      <DependentUpon>modelCSDL.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -322,6 +352,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="QuanLyCuaHangQuanAo.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QuanLyCuaHangQuanAo.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QuanLyCuaHangQuanAo.edmx.diagram">
+      <DependentUpon>QuanLyCuaHangQuanAo.edmx</DependentUpon>
+    </None>
     <None Include="QuanLyCuaHangQuanAoDataSet.xsc">
       <DependentUpon>QuanLyCuaHangQuanAoDataSet.xsd</DependentUpon>
     </None>
@@ -423,16 +460,22 @@
     <Content Include="Images\aokhoac_bomber.jpg" />
     <Content Include="Images\ao_cardigan.jpg" />
     <Content Include="Images\aothun_hoatiet.jpg" />
-    <Content Include="modelCSDL.Context.tt">
+    <Content Include="QuanLyCuaHangQuanAo.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>modelCSDL.Context.cs</LastGenOutput>
-      <DependentUpon>modelCSDL.edmx</DependentUpon>
+      <DependentUpon>QuanLyCuaHangQuanAo.edmx</DependentUpon>
+      <LastGenOutput>QuanLyCuaHangQuanAo.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="modelCSDL.tt">
+    <Content Include="QuanLyCuaHangQuanAo.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>modelCSDL.edmx</DependentUpon>
-      <LastGenOutput>modelCSDL.cs</LastGenOutput>
+      <DependentUpon>QuanLyCuaHangQuanAo.edmx</DependentUpon>
+      <LastGenOutput>QuanLyCuaHangQuanAo.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\1528669.png" />
+    <None Include="Resources\teamwork.png" />
+    <None Include="Resources\2108625.png" />
+    <None Include="Resources\7325265.png" />
+    <None Include="Resources\ree3ly4k.png" />
+    <None Include="Resources\material-management.png" />
     <None Include="Resources\icons8-print-16.png" />
     <None Include="Resources\icons8-banknotes-16.png" />
     <None Include="Resources\icons8-money-161.png" />

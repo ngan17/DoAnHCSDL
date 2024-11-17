@@ -31,8 +31,8 @@
       <PropertyRef Name="MaHoaDon" />
     </Key>
     <Property Name="MaHoaDon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="MaKhachHang" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="MaNhanVien" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MaKhachHang" Type="String" Nullable="false" />
+    <Property Name="MaNhanVien" Type="String" Nullable="false" />
     <Property Name="NgayMuaHang" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="TongTien" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
     <Property Name="HinhThucMua" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
@@ -45,7 +45,7 @@
     <Key>
       <PropertyRef Name="MaKhachHang" />
     </Key>
-    <Property Name="MaKhachHang" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaKhachHang" Type="String" Nullable="false" />
     <Property Name="HoTen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="SoDienThoai" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
@@ -77,7 +77,7 @@
     <Key>
       <PropertyRef Name="MaNhanVien" />
     </Key>
-    <Property Name="MaNhanVien" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaNhanVien" Type="String" Nullable="false" />
     <Property Name="HoTen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="GioiTinh" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
     <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
@@ -118,22 +118,12 @@
     <NavigationProperty Name="ChiTietPhieuNhaps" Relationship="Self.FK__ChiTietPh__MaSan__29572725" FromRole="SanPham" ToRole="ChiTietPhieuNhap" />
     <NavigationProperty Name="LoaiSanPham" Relationship="Self.FK__SanPham__MaLoai__182C9B23" FromRole="SanPham" ToRole="LoaiSanPham" />
   </EntityType>
-  <EntityType Name="sysdiagram">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-  </EntityType>
   <EntityType Name="tbl_User">
     <Key>
       <PropertyRef Name="TaiKhoan" />
     </Key>
     <Property Name="TaiKhoan" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MaNhanVien" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaNhanVien" Type="String" Nullable="false" />
     <Property Name="PasswordHash" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="PasswordSalt" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Quyen" Type="Int32" />
@@ -258,7 +248,6 @@
     <EntitySet Name="NhanViens" EntityType="Self.NhanVien" />
     <EntitySet Name="PhieuNhapHangs" EntityType="Self.PhieuNhapHang" />
     <EntitySet Name="SanPhams" EntityType="Self.SanPham" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
     <EntitySet Name="tbl_User" EntityType="Self.tbl_User" />
     <AssociationSet Name="FK__ChiTietHo__MaHoa__1FCDBCEB" Association="Self.FK__ChiTietHo__MaHoa__1FCDBCEB">
       <End Role="HoaDon" EntitySet="HoaDons" />

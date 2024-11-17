@@ -17,6 +17,8 @@ namespace DOAN.UserCotrols
         public string NameCTHD;
         public string ColorCt;
         public string SizeCt;
+        public decimal gia;
+        public int soluong;
         public itemHD1()
         {
             InitializeComponent();
@@ -33,6 +35,8 @@ namespace DOAN.UserCotrols
             this.NameCTHD = name;
             this.ColorCt = color;
             this.SizeCt = size;
+            this.soluong = soluong;
+            this.gia = decimal.Parse(gia);
             lb_Gia.Text = gia;
             AnhSP.Image = Image.FromFile(anh);
             lb_SL.Text = soluong.ToString();
@@ -53,6 +57,11 @@ namespace DOAN.UserCotrols
         }
 
         private void ColorSP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_Gia_Click(object sender, EventArgs e)
         {
 
         }

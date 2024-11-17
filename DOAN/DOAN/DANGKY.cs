@@ -66,7 +66,7 @@ namespace DOAN
 
         private bool kt()
         {
-            QuanLyCuaHangQuanAoEntities ql=new QuanLyCuaHangQuanAoEntities();
+            QuanLyCuaHangQuanAoEntities2 ql=new QuanLyCuaHangQuanAoEntities2();
             var x = ql.tbl_User.FirstOrDefault(t => t.TaiKhoan == txt_username.Text);
             if (x != null) 
             {
@@ -94,32 +94,16 @@ namespace DOAN
 
         }
 
-        private string create_manv()
-        {
-            QuanLyCuaHangQuanAoEntities ql=new QuanLyCuaHangQuanAoEntities();
-            
-            string mamoi = ql.NhanViens
-                            .OrderByDescending(t => t.MaNhanVien)
-                            .Select(t => t.MaNhanVien)
-                            .FirstOrDefault();
-            if (mamoi==null)
-            {
-                return "NV000";
-            }
-            int x =int.Parse( mamoi.Substring(2));
-            x++;
-            return $"NV{x:000}";
-
-        }
+        
         private void Btn_DangKy_Click(object sender, EventArgs e)
         {
             if (kt())
             try
             {
-                QuanLyCuaHangQuanAoEntities ql = new QuanLyCuaHangQuanAoEntities();
+                QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
 
                
-                string maNhanVien = create_manv();
+               
                 string gt;
                 if (chk_Nam.Checked)
                 {
@@ -135,7 +119,7 @@ namespace DOAN
                     NhanVien nv = new NhanVien
                     {
                         HoTen = "",
-                        MaNhanVien = maNhanVien,
+                      
                         ChucVu = "Nhân viên",
                         NgayVaoLam = DateTime.Now,  
                         Email = txt_email.Text,
@@ -144,15 +128,15 @@ namespace DOAN
                     };
                 ql.NhanViens.Add(nv);
 
-               
-                tbl_User x = new tbl_User
-                {
-                    TaiKhoan = txt_username.Text,
-                    PasswordHash = txt_pass.Text.Substring( 4),
-                    PasswordSalt = txt_pass.Text.Substring(0,4),
-                    MaNhanVien = maNhanVien,  
-                    Status = "Not Active"
-                };
+
+                    tbl_User x = new tbl_User
+                    {
+                        TaiKhoan = txt_username.Text,
+                        PasswordHash = txt_pass.Text.Substring(4),
+                        PasswordSalt = txt_pass.Text.Substring(0, 4),
+                        Quyen = 2,
+                        Status = "Not Active"
+                    };
                 ql.tbl_User.Add(x);
 
                 ql.SaveChanges();

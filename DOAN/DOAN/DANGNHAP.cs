@@ -28,7 +28,7 @@ namespace DOAN
 
         private void Btn_DangNhap_Click(object sender, EventArgs e)
         {
-            QuanLyCuaHangQuanAoEntities ql=new QuanLyCuaHangQuanAoEntities();
+            QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
             var x = ql.tbl_User.FirstOrDefault(t => t.TaiKhoan == txt_UserName.Text && t.PasswordSalt+t.PasswordHash==txt_PassWord.Text);
             if (x!=null)
             {

@@ -20,13 +20,13 @@ namespace DOAN.UserCotrols
 
         private void QLHoaDon_Load(object sender, EventArgs e)
         {
-            QuanLyCuaHangQuanAoEntities ql=new QuanLyCuaHangQuanAoEntities();
+            QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
             dataGridView1.DataSource = ql.HoaDons.ToList();
         }
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
-            QuanLyCuaHangQuanAoEntities ql=new QuanLyCuaHangQuanAoEntities();
+            QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
             dataGridView1.DataSource = null;
             var x=ql.ChiTietHoaDons.Where(t=>t.MaHoaDon==ma).ToList();
             dataGridView1 .DataSource = x;
@@ -44,7 +44,7 @@ namespace DOAN.UserCotrols
 
         private void uiButton2_Click(object sender, EventArgs e)
         {
-            QuanLyCuaHangQuanAoEntities ql = new QuanLyCuaHangQuanAoEntities();
+            QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
             dataGridView1.DataSource = ql.HoaDons.ToList();
         }
     }

@@ -151,6 +151,7 @@
             this.uiButton5.TabIndex = 27;
             this.uiButton5.Text = "Lưu";
             this.uiButton5.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.uiButton5.Click += new System.EventHandler(this.uiButton5_Click);
             // 
             // txt_MatKhau
             // 

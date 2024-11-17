@@ -21,11 +21,10 @@ namespace DOAN
         }
     
         public int MaHoaDon { get; set; }
-        public string MaKhachHang { get; set; }
-        public string MaNhanVien { get; set; }
+        public int MaKhachHang { get; set; }
+        public int MaNhanVien { get; set; }
         public System.DateTime NgayMuaHang { get; set; }
         public decimal TongTien { get; set; }
-        public string HinhThucMua { get; set; }
         public string TrangThaiThanhToan { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -12,11 +12,9 @@
     <Property Name="ChietKhau" Type="decimal" Precision="18" Scale="2" />
     <Property Name="GiaSauChietKhau" Type="decimal" Precision="38" Scale="6" StoreGeneratedPattern="Computed" />
   </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'QuanLyCuaHangQuanAo.dbo.ChiTietPhieuNhap' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="ChiTietPhieuNhap">
-    <Key>
-      <PropertyRef Name="MaChiTietPhieuNhap" />
-    </Key>
-    <Property Name="MaChiTietPhieuNhap" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="MaPhieuNhap" Type="int" />
     <Property Name="MaSanPham" Type="int" />
     <Property Name="SoLuong" Type="int" Nullable="false" />
@@ -27,18 +25,17 @@
       <PropertyRef Name="MaHoaDon" />
     </Key>
     <Property Name="MaHoaDon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="MaKhachHang" Type="varchar" MaxLength="10" />
-    <Property Name="MaNhanVien" Type="varchar" MaxLength="10" />
+    <Property Name="MaKhachHang" Type="int" Nullable="false" />
+    <Property Name="MaNhanVien" Type="int" Nullable="false" />
     <Property Name="NgayMuaHang" Type="date" Nullable="false" />
     <Property Name="TongTien" Type="decimal" Precision="18" Scale="2" Nullable="false" />
-    <Property Name="HinhThucMua" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="TrangThaiThanhToan" Type="nvarchar" MaxLength="20" />
   </EntityType>
   <EntityType Name="KhachHang">
     <Key>
       <PropertyRef Name="MaKhachHang" />
     </Key>
-    <Property Name="MaKhachHang" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MaKhachHang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="HoTen" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="Email" Type="nvarchar" MaxLength="100" />
     <Property Name="SoDienThoai" Type="nvarchar" MaxLength="15" />
@@ -67,7 +64,7 @@
     <Key>
       <PropertyRef Name="MaNhanVien" />
     </Key>
-    <Property Name="MaNhanVien" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MaNhanVien" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="HoTen" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="GioiTinh" Type="nvarchar" MaxLength="5" />
     <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
@@ -101,28 +98,18 @@
     <Property Name="Gia" Type="decimal" Precision="18" Scale="2" Nullable="false" />
     <Property Name="SoLuongTonKho" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="principal_id" Type="int" Nullable="false" />
-    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="version" Type="int" />
-    <Property Name="definition" Type="varbinary(max)" />
-  </EntityType>
   <EntityType Name="tbl_User">
     <Key>
       <PropertyRef Name="TaiKhoan" />
     </Key>
     <Property Name="TaiKhoan" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="MaNhanVien" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MaNhanVien" Type="int" Nullable="false" />
     <Property Name="PasswordHash" Type="varchar" MaxLength="255" />
     <Property Name="PasswordSalt" Type="varchar" MaxLength="255" />
     <Property Name="Quyen" Type="int" />
     <Property Name="Status" Type="nvarchar" MaxLength="20" />
   </EntityType>
-  <Association Name="FK__ChiTietHo__MaHoa__1FCDBCEB">
+  <Association Name="FK__ChiTietHo__MaHoa__34C8D9D1">
     <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="0..1" />
     <End Role="ChiTietHoaDon" Type="Self.ChiTietHoaDon" Multiplicity="*" />
     <ReferentialConstraint>
@@ -134,7 +121,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__ChiTietHo__MaSan__20C1E124">
+  <Association Name="FK__ChiTietHo__MaSan__35BCFE0A">
     <End Role="SanPham" Type="Self.SanPham" Multiplicity="0..1" />
     <End Role="ChiTietHoaDon" Type="Self.ChiTietHoaDon" Multiplicity="*" />
     <ReferentialConstraint>
@@ -146,7 +133,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__ChiTietPh__MaPhi__286302EC">
+  <Association Name="FK__ChiTietPh__MaPhi__25869641">
     <End Role="PhieuNhapHang" Type="Self.PhieuNhapHang" Multiplicity="0..1" />
     <End Role="ChiTietPhieuNhap" Type="Self.ChiTietPhieuNhap" Multiplicity="*" />
     <ReferentialConstraint>
@@ -158,7 +145,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__ChiTietPh__MaSan__29572725">
+  <Association Name="FK__ChiTietPh__MaSan__267ABA7A">
     <End Role="SanPham" Type="Self.SanPham" Multiplicity="0..1" />
     <End Role="ChiTietPhieuNhap" Type="Self.ChiTietPhieuNhap" Multiplicity="*" />
     <ReferentialConstraint>
@@ -170,8 +157,8 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__HoaDon__MaKhachH__1BFD2C07">
-    <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="0..1" />
+  <Association Name="FK__HoaDon__MaKhachH__30F848ED">
+    <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="1" />
     <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="KhachHang">
@@ -182,8 +169,8 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__HoaDon__MaNhanVi__1B0907CE">
-    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
+  <Association Name="FK__HoaDon__MaNhanVi__300424B4">
+    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
     <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="NhanVien">
@@ -194,7 +181,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PhieuNhap__MaNha__25869641">
+  <Association Name="FK__PhieuNhap__MaNha__239E4DCF">
     <End Role="NhaCungCap" Type="Self.NhaCungCap" Multiplicity="0..1" />
     <End Role="PhieuNhapHang" Type="Self.PhieuNhapHang" Multiplicity="*" />
     <ReferentialConstraint>
@@ -218,7 +205,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__tbl_User__MaNhan__2D27B809">
+  <Association Name="FK__tbl_User__MaNhan__398D8EEE">
     <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
     <End Role="tbl_User" Type="Self.tbl_User" Multiplicity="*" />
     <ReferentialConstraint>
@@ -232,7 +219,6 @@
   </Association>
   <EntityContainer Name="QuanLyCuaHangQuanAoModelStoreContainer">
     <EntitySet Name="ChiTietHoaDon" EntityType="Self.ChiTietHoaDon" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="ChiTietPhieuNhap" EntityType="Self.ChiTietPhieuNhap" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="HoaDon" EntityType="Self.HoaDon" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="KhachHang" EntityType="Self.KhachHang" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="LoaiSanPham" EntityType="Self.LoaiSanPham" Schema="dbo" store:Type="Tables" />
@@ -240,33 +226,40 @@
     <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PhieuNhapHang" EntityType="Self.PhieuNhapHang" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SanPham" EntityType="Self.SanPham" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_User" EntityType="Self.tbl_User" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__ChiTietHo__MaHoa__1FCDBCEB" Association="Self.FK__ChiTietHo__MaHoa__1FCDBCEB">
+    <EntitySet Name="ChiTietPhieuNhap" EntityType="Self.ChiTietPhieuNhap" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ChiTietPhieuNhap].[MaPhieuNhap] AS [MaPhieuNhap], 
+    [ChiTietPhieuNhap].[MaSanPham] AS [MaSanPham], 
+    [ChiTietPhieuNhap].[SoLuong] AS [SoLuong], 
+    [ChiTietPhieuNhap].[DonGia] AS [DonGia]
+    FROM [dbo].[ChiTietPhieuNhap] AS [ChiTietPhieuNhap]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__ChiTietHo__MaHoa__34C8D9D1" Association="Self.FK__ChiTietHo__MaHoa__34C8D9D1">
       <End Role="HoaDon" EntitySet="HoaDon" />
       <End Role="ChiTietHoaDon" EntitySet="ChiTietHoaDon" />
     </AssociationSet>
-    <AssociationSet Name="FK__ChiTietHo__MaSan__20C1E124" Association="Self.FK__ChiTietHo__MaSan__20C1E124">
+    <AssociationSet Name="FK__ChiTietHo__MaSan__35BCFE0A" Association="Self.FK__ChiTietHo__MaSan__35BCFE0A">
       <End Role="SanPham" EntitySet="SanPham" />
       <End Role="ChiTietHoaDon" EntitySet="ChiTietHoaDon" />
     </AssociationSet>
-    <AssociationSet Name="FK__ChiTietPh__MaPhi__286302EC" Association="Self.FK__ChiTietPh__MaPhi__286302EC">
+    <AssociationSet Name="FK__ChiTietPh__MaPhi__25869641" Association="Self.FK__ChiTietPh__MaPhi__25869641">
       <End Role="PhieuNhapHang" EntitySet="PhieuNhapHang" />
       <End Role="ChiTietPhieuNhap" EntitySet="ChiTietPhieuNhap" />
     </AssociationSet>
-    <AssociationSet Name="FK__ChiTietPh__MaSan__29572725" Association="Self.FK__ChiTietPh__MaSan__29572725">
+    <AssociationSet Name="FK__ChiTietPh__MaSan__267ABA7A" Association="Self.FK__ChiTietPh__MaSan__267ABA7A">
       <End Role="SanPham" EntitySet="SanPham" />
       <End Role="ChiTietPhieuNhap" EntitySet="ChiTietPhieuNhap" />
     </AssociationSet>
-    <AssociationSet Name="FK__HoaDon__MaKhachH__1BFD2C07" Association="Self.FK__HoaDon__MaKhachH__1BFD2C07">
+    <AssociationSet Name="FK__HoaDon__MaKhachH__30F848ED" Association="Self.FK__HoaDon__MaKhachH__30F848ED">
       <End Role="KhachHang" EntitySet="KhachHang" />
       <End Role="HoaDon" EntitySet="HoaDon" />
     </AssociationSet>
-    <AssociationSet Name="FK__HoaDon__MaNhanVi__1B0907CE" Association="Self.FK__HoaDon__MaNhanVi__1B0907CE">
+    <AssociationSet Name="FK__HoaDon__MaNhanVi__300424B4" Association="Self.FK__HoaDon__MaNhanVi__300424B4">
       <End Role="NhanVien" EntitySet="NhanVien" />
       <End Role="HoaDon" EntitySet="HoaDon" />
     </AssociationSet>
-    <AssociationSet Name="FK__PhieuNhap__MaNha__25869641" Association="Self.FK__PhieuNhap__MaNha__25869641">
+    <AssociationSet Name="FK__PhieuNhap__MaNha__239E4DCF" Association="Self.FK__PhieuNhap__MaNha__239E4DCF">
       <End Role="NhaCungCap" EntitySet="NhaCungCap" />
       <End Role="PhieuNhapHang" EntitySet="PhieuNhapHang" />
     </AssociationSet>
@@ -274,7 +267,7 @@
       <End Role="LoaiSanPham" EntitySet="LoaiSanPham" />
       <End Role="SanPham" EntitySet="SanPham" />
     </AssociationSet>
-    <AssociationSet Name="FK__tbl_User__MaNhan__2D27B809" Association="Self.FK__tbl_User__MaNhan__2D27B809">
+    <AssociationSet Name="FK__tbl_User__MaNhan__398D8EEE" Association="Self.FK__tbl_User__MaNhan__398D8EEE">
       <End Role="NhanVien" EntitySet="NhanVien" />
       <End Role="tbl_User" EntitySet="tbl_User" />
     </AssociationSet>

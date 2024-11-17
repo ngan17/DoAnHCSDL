@@ -40,9 +40,12 @@ namespace DOAN
         private void FORMCHINH_Load(object sender, EventArgs e)
         {
             DANGNHAP dn=new DANGNHAP();
-            lb_username.Text = this.username;
-           
-
+           QuanLyCuaHangQuanAoEntities2 ql=new QuanLyCuaHangQuanAoEntities2();
+            int manv = ql.tbl_User.Where(t => t.TaiKhoan==this.username).Select(t=>t.MaNhanVien).FirstOrDefault();
+            TenNV.Text=ql.NhanViens.Where(t=>t.MaNhanVien==manv).Select(t=>t.HoTen).FirstOrDefault();
+            ChucVu.Text=ql.NhanViens.Where(t=>t.MaNhanVien==manv).Select(t=>t.ChucVu).FirstOrDefault();
+            GioiTinh.Text = ql.NhanViens.Where(t => t.MaNhanVien == manv).Select(t => t.GioiTinh).FirstOrDefault();
+            DiaChi.Text=ql.NhanViens.Where(t=>t.MaNhanVien==manv).Select(t=>t.DiaChi).FirstOrDefault();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -239,6 +242,7 @@ namespace DOAN
         private void button2_Click_2(object sender, EventArgs e)
         {
             BanHang banHang = new BanHang();
+            banHang.TaiKhoan=this.username;
             AddUserControl(banHang);
         }
 
@@ -276,6 +280,11 @@ namespace DOAN
         private void uiButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void PanelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

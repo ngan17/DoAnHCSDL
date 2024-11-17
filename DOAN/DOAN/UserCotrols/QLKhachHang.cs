@@ -18,8 +18,8 @@ namespace DOAN.UserCotrols
         List <KhachHang> delete=new List <KhachHang> ();
         List<KhachHang> list = new List<KhachHang>();
 
-        string ma;
-        QuanLyCuaHangQuanAoEntities ql=new QuanLyCuaHangQuanAoEntities ();
+        int ma;
+        QuanLyCuaHangQuanAoEntities2 ql=new QuanLyCuaHangQuanAoEntities2 ();
 
         public QLKhachHang()
         {
@@ -33,29 +33,13 @@ namespace DOAN.UserCotrols
 
         private void QLKhachHang_Load(object sender, EventArgs e)
         {
-            QuanLyCuaHangQuanAoEntities ql = new QuanLyCuaHangQuanAoEntities();
+            QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
             load_data();
             list=ql.KhachHangs.ToList ();
             load_cbo_gt();
         }
 
-        private string create_manv()
-        {
-
-
-            string mamoi = list
-                            .OrderByDescending(t => t.MaKhachHang)
-                            .Select(t => t.MaKhachHang)
-                            .FirstOrDefault();
-            if (mamoi == null)
-            {
-                return "NV000";
-            }
-            int x = int.Parse(mamoi.Substring(2));
-            x++;
-            return $"NV{x:000}";
-
-        }
+       
 
         private void load_cbo_gt()
         {
@@ -71,7 +55,7 @@ namespace DOAN.UserCotrols
             {
                 int index = e.RowIndex;
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-                ma=row.Cells[0].Value.ToString();
+                ma=int.Parse(row.Cells[0].Value.ToString());
                 txt_ten.Text = row.Cells[1].Value.ToString();
                 txt_email.Text=row.Cells[2].Value.ToString();
                 txt_sdt.Text=row.Cells[3].Value.ToString();
@@ -86,7 +70,7 @@ namespace DOAN.UserCotrols
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
 
-                string ma = (row.Cells["MaKhachHang"].Value.ToString());
+                int ma = int.Parse(row.Cells["MaKhachHang"].Value.ToString());
 
 
                 KhachHang i = list.FirstOrDefault(t => t.MaKhachHang == ma);
@@ -100,7 +84,7 @@ namespace DOAN.UserCotrols
         private void uiButton1_Click(object sender, EventArgs e)
         {
             KhachHang kh=new KhachHang();
-            kh.MaKhachHang = create_manv();
+           
             kh.DiaChi=txt_DiaChi.Text;
             kh.Email=txt_email.Text;
             kh.HoTen=txt_ten.Text;

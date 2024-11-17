@@ -53,6 +53,12 @@
             this.button7 = new System.Windows.Forms.Button();
             this.hhhh = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.TenNV = new System.Windows.Forms.Label();
+            this.DiaChi = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.GioiTinh = new System.Windows.Forms.Label();
+            this.ChucVu = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -85,6 +91,7 @@
             this.PanelContainer.Name = "PanelContainer";
             this.PanelContainer.Size = new System.Drawing.Size(1344, 780);
             this.PanelContainer.TabIndex = 2;
+            this.PanelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContainer_Paint);
             // 
             // panel3
             // 
@@ -269,9 +276,17 @@
             // btn_dangxuat
             // 
             this.btn_dangxuat.BackColor = System.Drawing.Color.SkyBlue;
+            this.btn_dangxuat.Controls.Add(this.ChucVu);
+            this.btn_dangxuat.Controls.Add(this.GioiTinh);
+            this.btn_dangxuat.Controls.Add(this.label5);
+            this.btn_dangxuat.Controls.Add(this.label4);
+            this.btn_dangxuat.Controls.Add(this.DiaChi);
+            this.btn_dangxuat.Controls.Add(this.TenNV);
             this.btn_dangxuat.Controls.Add(this.label2);
             this.btn_dangxuat.Controls.Add(this.lb_username);
             this.btn_dangxuat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_dangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dangxuat.ForeColor = System.Drawing.Color.Navy;
             this.btn_dangxuat.Location = new System.Drawing.Point(0, 55);
             this.btn_dangxuat.Name = "btn_dangxuat";
             this.btn_dangxuat.Size = new System.Drawing.Size(1347, 65);
@@ -280,21 +295,22 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 34);
+            this.label2.ForeColor = System.Drawing.Color.Navy;
+            this.label2.Location = new System.Drawing.Point(219, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(74, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Địa chỉ:";
             // 
             // lb_username
             // 
             this.lb_username.AutoSize = true;
-            this.lb_username.ForeColor = System.Drawing.Color.Azure;
-            this.lb_username.Location = new System.Drawing.Point(77, 3);
+            this.lb_username.ForeColor = System.Drawing.Color.Navy;
+            this.lb_username.Location = new System.Drawing.Point(219, 6);
             this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(44, 16);
+            this.lb_username.Size = new System.Drawing.Size(132, 20);
             this.lb_username.TabIndex = 0;
-            this.lb_username.Text = "label1";
+            this.lb_username.Text = "Tên Nhân Viên";
             // 
             // panel5
             // 
@@ -381,6 +397,61 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // TenNV
+            // 
+            this.TenNV.AutoSize = true;
+            this.TenNV.Location = new System.Drawing.Point(357, 6);
+            this.TenNV.Name = "TenNV";
+            this.TenNV.Size = new System.Drawing.Size(59, 20);
+            this.TenNV.TabIndex = 2;
+            this.TenNV.Text = "label1";
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.AutoSize = true;
+            this.DiaChi.Location = new System.Drawing.Point(357, 39);
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Size = new System.Drawing.Size(59, 20);
+            this.DiaChi.TabIndex = 3;
+            this.DiaChi.Text = "label3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(623, 39);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(77, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Chức vụ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Navy;
+            this.label5.Location = new System.Drawing.Point(620, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 20);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Giới tính";
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.AutoSize = true;
+            this.GioiTinh.Location = new System.Drawing.Point(742, 6);
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.Size = new System.Drawing.Size(59, 20);
+            this.GioiTinh.TabIndex = 6;
+            this.GioiTinh.Text = "label6";
+            // 
+            // ChucVu
+            // 
+            this.ChucVu.AutoSize = true;
+            this.ChucVu.Location = new System.Drawing.Point(742, 39);
+            this.ChucVu.Name = "ChucVu";
+            this.ChucVu.Size = new System.Drawing.Size(59, 20);
+            this.ChucVu.TabIndex = 7;
+            this.ChucVu.Text = "label7";
+            // 
             // FORMCHINH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -432,5 +503,11 @@
         private Sunny.UI.UISmoothLabel uiSmoothLabel1;
         private System.Windows.Forms.Label lb_time;
         private Sunny.UI.UIButton uiButton1;
+        private System.Windows.Forms.Label DiaChi;
+        private System.Windows.Forms.Label TenNV;
+        private System.Windows.Forms.Label ChucVu;
+        private System.Windows.Forms.Label GioiTinh;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }

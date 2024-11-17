@@ -14,7 +14,6 @@ namespace DOAN
     
     public partial class ChiTietPhieuNhap
     {
-        public int MaChiTietPhieuNhap { get; set; }
         public Nullable<int> MaPhieuNhap { get; set; }
         public Nullable<int> MaSanPham { get; set; }
         public int SoLuong { get; set; }

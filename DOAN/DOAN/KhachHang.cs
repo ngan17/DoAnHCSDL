@@ -20,7 +20,7 @@ namespace DOAN
             this.HoaDons = new HashSet<HoaDon>();
         }
     
-        public string MaKhachHang { get; set; }
+        public int MaKhachHang { get; set; }
         public string HoTen { get; set; }
         public string Email { get; set; }
         public string SoDienThoai { get; set; }
