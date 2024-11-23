@@ -1,0 +1,14 @@
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\obj\Debug\DAT.csproj.AssemblyReference.cache
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\obj\Debug\DAT.Properties.Resources.resources
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\obj\Debug\DAT.ThongKeDoanhThu.resources
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\obj\Debug\DAT.csproj.GenerateResource.cache
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\obj\Debug\DAT.csproj.CoreCompileInputs.cache
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\bin\Debug\DAT.exe.config
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\bin\Debug\DAT.exe
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\bin\Debug\DAT.pdb
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\obj\Debug\DAT.exe
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\obj\Debug\DAT.pdb
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\obj\Debug\DAT.Form1.resources
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\obj\Debug\DAT.ThongKeTienNhapHang.resources
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\obj\Debug\DAT.ThongKeTienDoanhThuVaNhapHang.resources
+C:\Users\datho\source\repos\DoAnHCSDL\DOAN\DAT\obj\Debug\DAT.ThongKeBanHangCuaNV.ThongKeBanHangCuaNhanVien.resources

@@ -40,7 +40,7 @@ namespace DOAN
         private void FORMCHINH_Load(object sender, EventArgs e)
         {
             DANGNHAP dn=new DANGNHAP();
-           QuanLyCuaHangQuanAoEntities2 ql=new QuanLyCuaHangQuanAoEntities2();
+            QuanLyCuaHangQuanAoEntities2 ql = new QuanLyCuaHangQuanAoEntities2();
             int manv = ql.tbl_User.Where(t => t.TaiKhoan==this.username).Select(t=>t.MaNhanVien).FirstOrDefault();
             TenNV.Text=ql.NhanViens.Where(t=>t.MaNhanVien==manv).Select(t=>t.HoTen).FirstOrDefault();
             ChucVu.Text=ql.NhanViens.Where(t=>t.MaNhanVien==manv).Select(t=>t.ChucVu).FirstOrDefault();

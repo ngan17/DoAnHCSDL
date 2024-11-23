@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOAN", "DOAN\DOAN.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunnyUI.Demo", "D:\SunnyUI-master_ngocautomation\SunnyUI-master\SunnyUI.Demo\SunnyUI.Demo.csproj", "{6AE19B87-C2AA-4C56-BC26-1C343F30FF58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAT", "DAT\DAT.csproj", "{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6AE19B87-C2AA-4C56-BC26-1C343F30FF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AE19B87-C2AA-4C56-BC26-1C343F30FF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AE19B87-C2AA-4C56-BC26-1C343F30FF58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

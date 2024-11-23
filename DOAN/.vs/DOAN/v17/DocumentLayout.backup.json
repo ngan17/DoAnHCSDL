@@ -1,106 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\.Net\\DOAN_ENTITY\\DOAN\\",
+  "WorkspaceRootPath": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|e:\\.net\\doan_entity\\doan\\doan\\usercotrols\\tkb_tuan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\usercotrols\\tkb_tuan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|c:\\users\\datho\\source\\repos\\doanhcsdl\\doan\\dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|e:\\.net\\doan_entity\\doan\\doan\\usercotrols\\tkb_tuan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\usercotrols\\tkb_tuan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|c:\\users\\datho\\source\\repos\\doanhcsdl\\doan\\dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|e:\\.net\\doan_entity\\doan\\doan\\lichlamnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\lichlamnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|c:\\users\\datho\\source\\repos\\doanhcsdl\\doan\\dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|e:\\.net\\doan_entity\\doan\\doan\\lichlamnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\lichlamnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\formchinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\formchinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|e:\\.net\\doan_entity\\doan\\doan\\formchinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\formchinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\inhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\inhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\usercotrols\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\usercotrols\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|e:\\.net\\doan_entity\\doan\\doan\\usercotrols\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\usercotrols\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\report5.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\report5.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\inhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\inhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\report2.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\report2.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\quanlycuahangquanao.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\quanlycuahangquanao.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\usercotrols\\trangchu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\usercotrols\\trangchu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\usercotrols\\qlkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\usercotrols\\qlkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\usercotrols\\quanlykho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\usercotrols\\quanlykho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\report4.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\report4.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\report3.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\report3.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\usercotrols\\banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\usercotrols\\banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\report1.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\report1.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\inhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\inhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|E:\\.Net\\DOAN_ENTITY\\DOAN\\doan\\usercotrols\\banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9494FA90-E27F-459D-BD9C-B6936ADCE473}|DOAN\\DOAN.csproj|solutionrelative:doan\\usercotrols\\banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|c:\\users\\datho\\source\\repos\\doanhcsdl\\doan\\dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,21 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InHoaDon.cs",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\InHoaDon.cs",
-              "RelativeDocumentMoniker": "DOAN\\InHoaDon.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\InHoaDon.cs",
-              "RelativeToolTip": "DOAN\\InHoaDon.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAqwDoAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T08:28:11.608Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Bookmark",
@@ -140,289 +46,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FORMCHINH.cs",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\FORMCHINH.cs",
-              "RelativeDocumentMoniker": "DOAN\\FORMCHINH.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\FORMCHINH.cs",
-              "RelativeToolTip": "DOAN\\FORMCHINH.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAUwD0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\Form1.cs",
+              "RelativeDocumentMoniker": "DAT\\Form1.cs",
+              "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\Form1.cs",
+              "RelativeToolTip": "DAT\\Form1.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAowC8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T03:11:14.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TKB_TUAN.cs",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\TKB_TUAN.cs",
-              "RelativeDocumentMoniker": "DOAN\\UserCotrols\\TKB_TUAN.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\TKB_TUAN.cs*",
-              "RelativeToolTip": "DOAN\\UserCotrols\\TKB_TUAN.cs*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:58:46.379Z",
+              "WhenOpened": "2024-11-23T11:04:55.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TKB_TUAN.cs [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\TKB_TUAN.cs",
-              "RelativeDocumentMoniker": "DOAN\\UserCotrols\\TKB_TUAN.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\TKB_TUAN.cs [Design]*",
-              "RelativeToolTip": "DOAN\\UserCotrols\\TKB_TUAN.cs [Design]*",
+              "Title": "ThongKeBanHangCuaNhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
+              "RelativeDocumentMoniker": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
+              "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs*",
+              "RelativeToolTip": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs*",
+              "ViewState": "AgIAADMAAAAAAAAAAAAnwEEAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:57:18.452Z",
+              "WhenOpened": "2024-11-23T11:04:53.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ThongKeBanHangCuaNhanVien.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
+              "RelativeDocumentMoniker": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
+              "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs [Design]*",
+              "RelativeToolTip": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T11:03:21.703Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LichLamNhanVien.cs",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\LichLamNhanVien.cs",
-              "RelativeDocumentMoniker": "DOAN\\LichLamNhanVien.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\LichLamNhanVien.cs*",
-              "RelativeToolTip": "DOAN\\LichLamNhanVien.cs*",
-              "ViewState": "AgIAABcAAAAAAAAAAAAmwDMAAAAmAAAAAAAAAA==",
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\Form1.cs",
+              "RelativeDocumentMoniker": "DAT\\Form1.cs",
+              "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\Form1.cs [Design]",
+              "RelativeToolTip": "DAT\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:36:17.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LichLamNhanVien.cs [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\LichLamNhanVien.cs",
-              "RelativeDocumentMoniker": "DOAN\\LichLamNhanVien.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\LichLamNhanVien.cs [Design]*",
-              "RelativeToolTip": "DOAN\\LichLamNhanVien.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:28:52.541Z",
+              "WhenOpened": "2024-11-23T11:01:29.851Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DANGKY.cs",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\DANGKY.cs",
-              "RelativeDocumentMoniker": "DOAN\\DANGKY.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\DANGKY.cs",
-              "RelativeToolTip": "DOAN\\DANGKY.cs",
-              "ViewState": "AgIAADIBAAAAAAAAAAAwwGMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T09:45:33.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DANGKY.cs [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\DANGKY.cs",
-              "RelativeDocumentMoniker": "DOAN\\DANGKY.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\DANGKY.cs [Design]",
-              "RelativeToolTip": "DOAN\\DANGKY.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T09:45:32.148Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "QuanLyKho.cs [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\QuanLyKho.cs",
-              "RelativeDocumentMoniker": "DOAN\\UserCotrols\\QuanLyKho.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\QuanLyKho.cs [Design]",
-              "RelativeToolTip": "DOAN\\UserCotrols\\QuanLyKho.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T09:44:47.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "QuanLyCuaHangQuanAo.edmx [Diagram1]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\QuanLyCuaHangQuanAo.edmx",
-              "RelativeDocumentMoniker": "DOAN\\QuanLyCuaHangQuanAo.edmx",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\QuanLyCuaHangQuanAo.edmx [Diagram1]",
-              "RelativeToolTip": "DOAN\\QuanLyCuaHangQuanAo.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-11-15T09:35:00.17Z",
-              "EditorCaption": " [Diagram1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Report5.rdlc [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\Report5.rdlc",
-              "RelativeDocumentMoniker": "DOAN\\Report5.rdlc",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\Report5.rdlc [Design]",
-              "RelativeToolTip": "DOAN\\Report5.rdlc [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2024-11-15T09:25:22.57Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "QLKhachHang.cs [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\QLKhachHang.cs",
-              "RelativeDocumentMoniker": "DOAN\\UserCotrols\\QLKhachHang.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\QLKhachHang.cs [Design]",
-              "RelativeToolTip": "DOAN\\UserCotrols\\QLKhachHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T09:02:45.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DANGNHAP.cs [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\DANGNHAP.cs",
-              "RelativeDocumentMoniker": "DOAN\\DANGNHAP.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\DANGNHAP.cs [Design]",
-              "RelativeToolTip": "DOAN\\DANGNHAP.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T12:43:26.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FORMCHINH.cs [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\FORMCHINH.cs",
-              "RelativeDocumentMoniker": "DOAN\\FORMCHINH.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\FORMCHINH.cs [Design]",
-              "RelativeToolTip": "DOAN\\FORMCHINH.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T12:43:26.255Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TrangChu.Designer.cs",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\TrangChu.Designer.cs",
-              "RelativeDocumentMoniker": "DOAN\\UserCotrols\\TrangChu.Designer.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\TrangChu.Designer.cs",
-              "RelativeToolTip": "DOAN\\UserCotrols\\TrangChu.Designer.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAA6wBYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T03:12:00.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TrangChu.cs",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\TrangChu.cs",
-              "RelativeDocumentMoniker": "DOAN\\UserCotrols\\TrangChu.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\TrangChu.cs",
-              "RelativeToolTip": "DOAN\\UserCotrols\\TrangChu.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAAwKoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T02:42:22.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TrangChu.cs [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\TrangChu.cs",
-              "RelativeDocumentMoniker": "DOAN\\UserCotrols\\TrangChu.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\TrangChu.cs [Design]",
-              "RelativeToolTip": "DOAN\\UserCotrols\\TrangChu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T02:41:30.852Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "InHoaDon.Designer.cs",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\InHoaDon.Designer.cs",
-              "RelativeDocumentMoniker": "DOAN\\InHoaDon.Designer.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\InHoaDon.Designer.cs",
-              "RelativeToolTip": "DOAN\\InHoaDon.Designer.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAmwDQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T08:59:00.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Report4.rdlc [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\Report4.rdlc",
-              "RelativeDocumentMoniker": "DOAN\\Report4.rdlc",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\Report4.rdlc [Design]",
-              "RelativeToolTip": "DOAN\\Report4.rdlc [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2024-11-09T09:28:12.585Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Report3.rdlc [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\Report3.rdlc",
-              "RelativeDocumentMoniker": "DOAN\\Report3.rdlc",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\Report3.rdlc [Design]",
-              "RelativeToolTip": "DOAN\\Report3.rdlc [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2024-11-09T09:04:33.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Report2.rdlc [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\Report2.rdlc",
-              "RelativeDocumentMoniker": "DOAN\\Report2.rdlc",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\Report2.rdlc [Design]",
-              "RelativeToolTip": "DOAN\\Report2.rdlc [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2024-11-09T08:55:20.778Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Report1.rdlc [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\Report1.rdlc",
-              "RelativeDocumentMoniker": "DOAN\\Report1.rdlc",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\Report1.rdlc [Design]",
-              "RelativeToolTip": "DOAN\\Report1.rdlc [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2024-11-09T08:35:37.817Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "BanHang.cs",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\BanHang.cs",
-              "RelativeDocumentMoniker": "DOAN\\UserCotrols\\BanHang.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\BanHang.cs",
-              "RelativeToolTip": "DOAN\\UserCotrols\\BanHang.cs",
-              "ViewState": "AgIAAOUAAAAAAAAAAAAswO8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T08:27:06.005Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "InHoaDon.cs [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\InHoaDon.cs",
-              "RelativeDocumentMoniker": "DOAN\\InHoaDon.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\InHoaDon.cs [Design]",
-              "RelativeToolTip": "DOAN\\InHoaDon.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T08:26:18.299Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "BanHang.cs [Design]",
-              "DocumentMoniker": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\BanHang.cs",
-              "RelativeDocumentMoniker": "DOAN\\UserCotrols\\BanHang.cs",
-              "ToolTip": "E:\\.Net\\DOAN_ENTITY\\DOAN\\DOAN\\UserCotrols\\BanHang.cs [Design]",
-              "RelativeToolTip": "DOAN\\UserCotrols\\BanHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T08:26:11.866Z"
             }
           ]
         }
