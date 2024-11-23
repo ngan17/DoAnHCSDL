@@ -1,0 +1,101 @@
+﻿go
+CREATE or alter PROCEDURE LayDoanhThuTheoThang
+    @Nam INT
+AS
+BEGIN
+    -- Tạo bảng tạm thời chứa tất cả các tháng trong năm
+    DECLARE @ThangNam TABLE
+    (
+        Thang INT
+    );
+
+    -- Chèn các tháng vào bảng tạm thời
+    INSERT INTO @ThangNam (Thang)
+    VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9), (10), (11), (12);
+
+    -- Truy vấn doanh thu từng tháng
+    SELECT 
+        tn.Thang, 
+        ISNULL(SUM(hd.TongTien), 0) AS DoanhThu
+    FROM 
+        @ThangNam tn
+    LEFT JOIN 
+        HoaDon hd ON tn.Thang = MONTH(hd.NgayMuaHang) AND YEAR(hd.NgayMuaHang) = @Nam
+    GROUP BY 
+        tn.Thang
+    ORDER BY 
+        tn.Thang;
+END
+
+
+exec LayDoanhThuTheoThang @Nam = 2023
+
+go
+CREATE PROCEDURE LayTongTienNhapHangTheoThang
+    @Nam INT
+AS
+BEGIN
+    -- Tạo bảng tạm thời chứa tất cả các tháng trong năm
+    DECLARE @ThangNam TABLE
+    (
+        Thang INT
+    );
+
+    -- Chèn các tháng vào bảng tạm thời
+    INSERT INTO @ThangNam (Thang)
+    VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9), (10), (11), (12);
+
+    -- Truy vấn tổng số tiền nhập hàng từng tháng
+    SELECT 
+        tn.Thang, 
+        ISNULL(SUM(pn.TongTien), 0) AS TongTienNhapHang
+    FROM 
+        @ThangNam tn
+    LEFT JOIN 
+        PhieuNhapHang pn ON tn.Thang = MONTH(pn.NgayNhapHang) AND YEAR(pn.NgayNhapHang) = @Nam
+    GROUP BY 
+        tn.Thang
+    ORDER BY 
+        tn.Thang;
+END
+
+go
+DECLARE @ThangNam TABLE
+    (
+        Thang INT
+    );
+
+    -- Chèn các tháng vào bảng tạm thời
+    INSERT INTO @ThangNam (Thang)
+    VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9), (10), (11), (12);
+
+select * from @ThangNam
+go
+
+EXEC LayTongTienNhapHangTheoThang @Nam = 2023;
+
+go
+
+-- thong ke doanh so ban hang cua nhan vien theo thang va nam
+SELECT nv.HoTen, SUM(hd.TongTien) AS TongTienBanHang
+FROM NhanVien nv
+LEFT JOIN HoaDon hd ON nv.MaNhanVien = hd.MaNhanVien
+WHERE MONTH(NgayMuaHang) = 9 and YEAR(NgayMuaHang) = 2023
+GROUP BY nv.HoTen
+ORDER BY TongTienBanHang DESC;
+
+go
+create proc ThongKeDoanhSoBanHangCuaNhanVien
+	@Nam int,
+	@Thang int
+as
+begin
+	SELECT nv.HoTen, SUM(hd.TongTien) AS TongTienBanHang
+	FROM NhanVien nv
+	LEFT JOIN HoaDon hd ON nv.MaNhanVien = hd.MaNhanVien
+	WHERE MONTH(NgayMuaHang) = @Thang and YEAR(NgayMuaHang) = @Nam
+	GROUP BY nv.HoTen
+	ORDER BY TongTienBanHang DESC;
+end
+
+exec ThongKeDoanhSoBanHangCuaNhanVien @Nam = 2023, @Thang = 9

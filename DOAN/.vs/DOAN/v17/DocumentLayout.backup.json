@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|c:\\users\\datho\\source\\repos\\doanhcsdl\\doan\\dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|c:\\users\\datho\\source\\repos\\doanhcsdl\\doan\\dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|c:\\users\\datho\\source\\repos\\doanhcsdl\\doan\\dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -54,8 +54,7 @@
               "RelativeToolTip": "DAT\\Form1.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAowC8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T11:04:55.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T11:04:55.96Z"
             },
             {
               "$type": "Document",
@@ -63,9 +62,9 @@
               "Title": "ThongKeBanHangCuaNhanVien.cs",
               "DocumentMoniker": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
               "RelativeDocumentMoniker": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
-              "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs*",
-              "RelativeToolTip": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs*",
-              "ViewState": "AgIAADMAAAAAAAAAAAAnwEEAAABjAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
+              "RelativeToolTip": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAnwD0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T11:04:53.481Z",
               "EditorCaption": ""
@@ -76,11 +75,10 @@
               "Title": "ThongKeBanHangCuaNhanVien.cs [Design]",
               "DocumentMoniker": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
               "RelativeDocumentMoniker": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
-              "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs [Design]*",
-              "RelativeToolTip": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs [Design]*",
+              "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs [Design]",
+              "RelativeToolTip": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T11:03:21.703Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-23T11:03:21.703Z"
             },
             {
               "$type": "Document",
@@ -91,8 +89,7 @@
               "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\Form1.cs [Design]",
               "RelativeToolTip": "DAT\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T11:01:29.851Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-23T11:01:29.851Z"
             }
           ]
         }

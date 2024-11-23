@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|c:\\users\\datho\\source\\repos\\doanhcsdl\\doan\\dat\\sql.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\sql.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|c:\\users\\datho\\source\\repos\\doanhcsdl\\doan\\dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|c:\\users\\datho\\source\\repos\\doanhcsdl\\doan\\dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\thongkebanhangcuanv\\thongkebanhangcuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|c:\\users\\datho\\source\\repos\\doanhcsdl\\doan\\dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|c:\\users\\datho\\source\\repos\\doanhcsdl\\doan\\dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6C63CD57-94B1-4245-8FCC-D666B31EE8AC}|DAT\\DAT.csproj|solutionrelative:dat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "SQL.txt",
+              "DocumentMoniker": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\SQL.txt",
+              "RelativeDocumentMoniker": "DAT\\SQL.txt",
+              "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\SQL.txt",
+              "RelativeToolTip": "DAT\\SQL.txt",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAFAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-23T11:38:20.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\Form1.cs",
               "RelativeDocumentMoniker": "DAT\\Form1.cs",
@@ -54,45 +71,42 @@
               "RelativeToolTip": "DAT\\Form1.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAowC8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T11:04:55.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T11:04:55.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ThongKeBanHangCuaNhanVien.cs",
               "DocumentMoniker": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
               "RelativeDocumentMoniker": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
               "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
               "RelativeToolTip": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAnwEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAnwD0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T11:04:53.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ThongKeBanHangCuaNhanVien.cs [Design]",
               "DocumentMoniker": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
               "RelativeDocumentMoniker": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs",
               "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs [Design]",
               "RelativeToolTip": "DAT\\ThongKeBanHangCuaNV\\ThongKeBanHangCuaNhanVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T11:03:21.703Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-23T11:03:21.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\Form1.cs",
               "RelativeDocumentMoniker": "DAT\\Form1.cs",
               "ToolTip": "C:\\Users\\datho\\source\\repos\\DoAnHCSDL\\DOAN\\DAT\\Form1.cs [Design]",
               "RelativeToolTip": "DAT\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T11:01:29.851Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-23T11:01:29.851Z"
             }
           ]
         }
